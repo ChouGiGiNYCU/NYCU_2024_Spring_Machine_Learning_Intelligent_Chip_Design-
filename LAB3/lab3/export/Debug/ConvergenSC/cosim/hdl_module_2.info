@@ -1,0 +1,22 @@
+hdl_simulator = vcs
+
+hdl_proxy_name = HARDWARE.i_MAC
+hdl_module_name = MAC
+hdl_library_name = CWR_HDL_WORK
+map_ports_by = index
+ports = (
+  clock : in bool 1
+  reset : in bool 1
+  a : in sc_uint 4
+  b : in sc_uint 4
+  c : in sc_uint 8
+  a_out : out sc_uint 4
+  b_out : out sc_uint 4
+  c_out : out sc_uint 8
+  result : out sc_uint 9
+  done : out bool 1
+)
+verilog_source_files = (
+  CWR_HDL_WORK;/RAID2/COURSE/mlchip/mlchip038/lab3/MAC.v
+)
+hdl_language_type = VERILOG
